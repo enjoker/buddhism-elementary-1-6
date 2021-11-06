@@ -133,7 +133,7 @@ const homeScreen = ({ navigation }) => {
     const gradeHandler = async classSelected => {
       let action;
       if (classSelected !== 0) {
-        action = subGradeActions.getSub('1', classSelected);
+        action = subGradeActions.getSub('13', classSelected);
         try {
           await dispatch(action);
           navigation.navigate('type', {});
@@ -151,7 +151,7 @@ const homeScreen = ({ navigation }) => {
             styles.textMedium34,
             { textAlign: 'center', color: '#FFFFFF' },
           ]}>
-          คณิตศาสตร์
+          พุทธศาสนา
         </Text>
         <View
           style={{
